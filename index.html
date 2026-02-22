@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotto - Online Job Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Section navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="image\logo.png" alt="Gotto Logo" width="40" height="40" class="me-2 d-inline-block align-top">
+                <div class="brand-text">
+                    <span class="fw-bold d-block lh-1 text-primary">Gotto</span>
+                    <small class="text-uppercase fw-semibold" style="font-size: 10px; color: hsl(0, 79%, 50%);">Online
+                        Job Portal</small>
+                </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Homepage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Gotto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-decoration-none me-3 register-link" style="color: #5088b9;">Register</a>
+                    <a href="#" class="custom-round-btn" style="color: #f2efef;">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 2 -->
+    <section class="hero-section text-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <p class="mb-2">Are you looking for your dream job?</p>
+                    <h1 class="display-3 fw-bold mb-4">Online Platform.<br>Best Job portal</h1>
+                    <button class="btn btn-outline-light rounded-pill px-4">Browse Categories</button>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="search-card">
+                        <h2 class="h3 mb-4 fw-bold">Search your dream job</h2>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Job Title">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Location">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-find mt-2">Find a job</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="mt-4">
+                            <small class="d-block mb-2">Popular keywords:</small>
+                            <a href="#" class="keyword-badge">Web design</a>
+                            <a href="#" class="keyword-badge">Marketing</a>
+                            <a href="#" class="keyword-badge">Customer support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section-3-->
+    <section class="container py-5 text-center">
+        <h2 class="fw-bold mb-5">Browse by Categories</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-2">
+                <div class="category-item">
+                    <span class="count-badge">320</span>
+                    <div class="circle-icon">
+                        <p class="mt-2">
+                            <img src="image\webdesign.png" width="35" height="35"><br>
+                            Web design
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="category-item">
+                    <span class="count-badge">180</span>
+                    <div class="circle-icon">
+                        <p class="mt-2">
+                            <img src="image\marketing.png" width="35" height="35"><br>
+                            Marketing
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="category-item">
+                    <span class="count-badge">340</span>
+                    <div class="circle-icon">
+                        <p class="mt-2">
+                            <img src="image\video.png" width="35" height="35"><br>
+                            Video
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="category-item">
+                    <span class="count-badge">140</span>
+                    <div class="circle-icon">
+                        <p class="mt-2">
+                            <img src="image\website.png" width="35" height="35"><br>
+                            Websites
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="category-item">
+                    <span class="count-badge">84</span>
+                    <div class="circle-icon">
+                        <p class="mt-2">
+                            <img src="image\customer.png" width="35" height="35"><br>
+                            Customer Support
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="container">
+            <div class="row g-0 custom-card-container">
+
+                <div style="margin-right: 10px; width: 25%;"
+                    class="col-lg-2 position-relative d-flex align-items-end intro-img-wrapper">
+                    <img src="image\professional-asian-businesswoman-gray-blazer.jpg.jpeg" style="height: 100%;"
+                        class="img-fluid main-img" alt="Julia Ward">
+                    <div class="julia-tag">
+                        <div class="tag-top">Julia Ward</div>
+                        <div class="tag-bottom">Investor</div>
+                    </div>
+                </div>
+
+                <div style="margin-right: 10px;"
+                    class="col-lg-5 intro-content-box d-flex flex-column justify-content-center p-5">
+                    <h1 class="fw-bold mb-4">Introduction Gotto</h1>
+                    <p class="mb-4">Gotto Job is a free website template for job portals. This layout is based on
+                        Bootstrap 5 CSS framework. Thank you for visiting Tooplate website. Images are from FreePik
+                        website.</p>
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2">Get to know us</a>
+                        <a href="#" class="text-white text-decoration-none fw-semibold">Explore Jobs</a>
+                    </div>
+                </div>
+
+                <div style="margin-right: 10px; width: 25%;" class="col-lg-2 position-relative intro-img-wrapper">
+                    <div class="card-image-wrapper">
+                        <img src="image\horizontal-shot-happy-mixed-race-females.jpg.jpeg" alt="Gotto Team"
+                            class="img-fluid main-img" style="height: 100%;">
+                    </div>
+
+                    <div class="instagram-overlay">
+                        <a href="#" class="btn btn-orange rounded-pill px-4 py-2 d-inline-flex align-items-center">
+                            <i class="fa-brands fa-instagram me-2"></i>
+                            <span class="fw-bold">@Gotto</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Featured Jobs</h1>
+            <p class="text-muted">Over 10k opening jobs <span class="text-secondary">Feel free to download and use our
+                    free HTML templates.</span></p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="job-card d-flex align-items-center mb-3">
+                    <div class="company-logo bg-white shadow-sm">
+                        <img src="image\google.png" alt="Google">
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h5 class="fw-bold mb-1">Technical Lead</h5>
+                        <div class="job-meta d-flex flex-wrap text-muted small">
+                            <span class="me-3"><i class="bi bi-geo-alt me-1"></i>Kuala, Malaysia</span>
+                            <span class="me-3"><i class="bi bi-clock me-1"></i>10 hours ago</span>
+                            <span><i class="bi bi-cash-stack me-1"></i>$20k</span>
+                        </div>
+                    </div>
+                    <div class="tags mx-4 d-none d-md-flex">
+                        <span class="badge badge-purple me-2">Internship</span>
+                        <span class="badge badge-outline">Freelance</span>
+                    </div>
+                    <button class="btn btn-orange px-4 py-2">Apply now</button>
+                </div>
+
+                <div class="job-card active d-flex align-items-center mb-3">
+                    <div class="company-logo bg-white shadow-sm">
+                        <img src="image\apple.png" alt="Apple">
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h5 class="fw-bold mb-1">Business Director</h5>
+                        <div class="job-meta d-flex flex-wrap text-muted small">
+                            <span class="me-3"><i class="bi bi-geo-alt me-1"></i>California, USA</span>
+                            <span class="me-3"><i class="bi bi-clock me-1"></i>1 day ago</span>
+                            <span><i class="bi bi-cash-stack me-1"></i>$90k</span>
+                        </div>
+                    </div>
+                    <div class="tags mx-4 d-none d-md-flex">
+                        <span class="badge badge-purple me-2">Senior</span>
+                        <span class="badge badge-outline">Full Time</span>
+                    </div>
+                    <button class="btn btn-orange px-4 py-2">Apply now</button>
+                </div>
+
+                <div class="job-card d-flex align-items-center mb-3">
+                    <div class="company-logo bg-white shadow-sm">
+                        <img src="image\meta.png" alt="Meta">
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h5 class="fw-bold mb-1">HR Manager</h5>
+                        <div class="job-meta d-flex flex-wrap text-muted small">
+                            <span class="me-3"><i class="bi bi-geo-alt me-1"></i>Tower, Paris</span>
+                            <span class="me-3"><i class="bi bi-clock me-1"></i>22 hours ago</span>
+                            <span><i class="bi bi-cash-stack me-1"></i>$50k</span>
+                        </div>
+                    </div>
+                    <div class="tags mx-4 d-none d-md-flex">
+                        <span class="badge badge-purple me-2">Junior</span>
+                        <span class="badge badge-outline">Contract</span>
+                    </div>
+                    <button class="btn btn-orange px-4 py-2">Apply now</button>
+                </div>
+
+                <div class="job-card active d-flex align-items-center mb-3">
+                    <div class="company-logo bg-white shadow-sm">
+                        <img src="image\slack.png" alt="Apple">
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h5 class="fw-bold mb-1">Dev Ops</h5>
+                        <div class="job-meta d-flex flex-wrap text-muted small">
+                            <span class="me-3"><i class="bi bi-geo-alt me-1"></i>Bankog,Thailend</span>
+                            <span class="me-3"><i class="bi bi-clock me-1"></i>40 min ago</span>
+                            <span><i class="bi bi-cash-stack me-1"></i>$75k-80k</span>
+                        </div>
+                    </div>
+                    <div class="tags mx-4 d-none d-md-flex">
+                        <span class="badge badge-purple me-2">Senior</span>
+                        <span class="badge badge-outline">part Time</span>
+                    </div>
+                    <button class="btn btn-orange px-4 py-2">Apply now</button>
+                </div>
+
+                <div class="job-card d-flex align-items-center mb-3">
+                    <div class="company-logo bg-white shadow-sm">
+                        <img src="image\creative-market.png" alt="Meta">
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h5 class="fw-bold mb-1">UX Designer</h5>
+                        <div class="job-meta d-flex flex-wrap text-muted small">
+                            <span class="me-3"><i class="bi bi-geo-alt me-1"></i>Bankog,Thailend</span>
+                            <span class="me-3"><i class="bi bi-clock me-1"></i>2 hours ago</span>
+                            <span><i class="bi bi-cash-stack me-1"></i>$100k</span>
+                        </div>
+                    </div>
+                    <div class="tags mx-4 d-none d-md-flex">
+                        <span class="badge badge-purple me-2">Junior</span>
+                        <span class="badge badge-outline">Contract</span>
+                    </div>
+                    <button class="btn btn-orange px-4 py-2">Apply now</button>
+                </div>
+
+                <nav aria-label="Page navigation">
+                    <ul class="pagination custom-pagination align-items-center justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link border-0 bg-transparent text-muted" href="#">Prev</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link border-0 bg-transparent text-muted" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5 -->
+    <section class="job-feature-section">
+        <div class="container">
+            <div class="row gx-6 custom-card-container">
+                <div class="col-lg-6 bg-purple">
+                    <h1>Gotto helps you an easier way to get new job</h1>
+                    <p>
+                        You are not allowed to redistribute the template ZIP file on any other template collection
+                        website.
+                        Please contact us for more info. Thank you.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="stat-value">12M</div>
+                            <div class="stat-label">Daily active users</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-value">450k</div>
+                            <div class="stat-label">Opening jobs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 video-container">
+                    <img src="image\people-working-as-team-company.jpg.jpeg" alt="Team Working"
+                        class="img-fluid main-img">
+
+                    <div class="play-button ">
+                        <div class="play-icon">
+                            <svg viewBox="0 0 24 24" fill="white" width="30" height="30">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6 -->
+    <div class="container py-5">
+        <div class="header-section mb-5">
+            <h1 class="fw-bold">Recent Jobs</h1>
+            <p class="text-muted"><span class="fw-bold text-dark">Over 10k opening jobs</span> Lorem ipsum dolor sit
+                amet, consectetur adipiscing <br> kengan omeg kohm tokito adipcingi elit eismuod larehai</p>
+        </div>
+
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card job-card h-100 border-0 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="image\it-professional-works-startup-project.jpg.jpeg" class="card-img-top"
+                                alt="Technical Lead">
+                            <div class="badge-group">
+                                <span class="badge custom-badge badge-purple">Internship</span>
+                                <span class="badge custom-badge badge-white">Freelance</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Technical Lead</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="company-logo bg-light p-1 rounded-circle me-2">
+                                    <img src="image\salesforce.png" width="50" alt="Salesforce">
+                                </div>
+                                <span class="text-muted small">Salesforce</span>
+                                <div class="ms-auto text-muted icon-group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-bookmark me-2 icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-heart icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex text-muted small mb-4">
+                                <span class="me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                    Kuala, Malaysia</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                    </svg>
+                                    10 hours ago
+                                </span>
+                            </div>
+                            <hr class="text-light">
+                            <div class="d-flex justify-content-between align-items-center pt-2">
+                                <span class="salary-text fw-bold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                                    </svg>
+                                    $50k
+                                </span>
+                                <a href="#" class="btn btn-apply px-4 py-2">Apply now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card job-card h-100 border-0 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="image\marketing-assistant.jpg.jpeg" class="card-img-top"
+                                alt="Marketing Assistant">
+                            <div class="badge-group">
+                                <span class="badge custom-badge badge-purple">Senior</span>
+                                <span class="badge custom-badge badge-white">Part Time</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Marketing Assistant</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="company-logo bg-light p-1 rounded-circle me-2">
+                                    <img src="image\spotify.png" width="40" alt="Spotify">
+                                </div>
+                                <span class="text-muted small">Spotify</span>
+                                <div class="ms-auto text-muted icon-group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-bookmark me-2 icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-heart icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex text-muted small mb-4">
+                                <span class="me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                    California, USA
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                    </svg>
+                                    8 days ago
+                                </span>
+                            </div>
+                            <hr class="text-light">
+                            <div class="d-flex justify-content-between align-items-center pt-2">
+                                <span class="salary-text fw-bold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                        <path
+                                            d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                                    </svg>
+                                    $20k
+                                </span>
+                                <a href="#" class="btn btn-apply px-4 py-2">Apply now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card job-card h-100 border-0 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="image\coding-man.jpg.jpeg" class="card-img-top" alt="Programmer">
+                            <div class="badge-group">
+                                <span class="badge custom-badge badge-purple">Junior</span>
+                                <span class="badge custom-badge badge-white">Contract</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Programmer</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="company-logo bg-light p-1 rounded-circle me-2">
+                                    <img src="image\twitter.png" width="40" alt="Twitter">
+                                </div>
+                                <span class="text-muted small">Twitter</span>
+                                <div class="ms-auto text-muted icon-group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-bookmark me-2 icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-heart icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex text-muted small mb-4">
+                                <span class="me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg> California, USA</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                    </svg>
+                                    23 hours ago
+                                </span>
+                            </div>
+                            <hr class="text-light">
+                            <div class="d-flex justify-content-between align-items-center pt-2">
+                                <span class="salary-text fw-bold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                        <path
+                                            d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                                    </svg>
+                                    $68k
+                                </span>
+                                <a href="#" class="btn btn-apply px-4 py-2">Apply now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card job-card h-100 border-0 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="image\pretty-blogger-posing-cozy-apartment.jpg.jpeg" class="card-img-top"
+                                alt="Programmer">
+                            <div class="badge-group">
+                                <span class="badge custom-badge badge-purple">Junior</span>
+                                <span class="badge custom-badge badge-white">Contract</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Hr Manager</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="company-logo bg-light p-1 rounded-circle me-2">
+                                    <img src="image\yelp.png" width="40" alt="Yelp">
+                                </div>
+                                <span class="text-muted small">Yelp</span>
+                                <div class="ms-auto text-muted icon-group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-bookmark me-2 icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-heart icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex text-muted small mb-4">
+                                <span class="me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                    California, USA</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                    </svg>
+                                    15 hours ago
+                                </span>
+                            </div>
+                            <hr class="text-light">
+                            <div class="d-flex justify-content-between align-items-center pt-2">
+                                <span class="salary-text fw-bold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                        <path
+                                            d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                                    </svg>
+                                    $35k-45k
+                                </span>
+                                <a href="#" class="btn btn-apply px-4 py-2">Apply now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card job-card h-100 border-0 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="image\paper-analysis.jpg.jpeg" class="card-img-top" alt="Programmer">
+                            <div class="badge-group">
+                                <span class="badge custom-badge badge-purple">Junior</span>
+                                <span class="badge custom-badge badge-white">Contract</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Sales Representative</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="company-logo bg-light p-1 rounded-circle me-2">
+                                    <img src="image\paypal.png" width="40" alt="PayPal">
+                                </div>
+                                <span class="text-muted small">PayPal</span>
+                                <div class="ms-auto text-muted icon-group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-bookmark me-2 icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-heart icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex text-muted small mb-4">
+                                <span class="me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                    Bankog,Thailend</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                    </svg>
+                                    30 min ago
+                                </span>
+                            </div>
+                            <hr class="text-light">
+                            <div class="d-flex justify-content-between align-items-center pt-2">
+                                <span class="salary-text fw-bold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                        <path
+                                            d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                                    </svg>
+                                    $20k-35k
+                                </span>
+                                <a href="#" class="btn btn-apply px-4 py-2">Apply now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card job-card h-100 border-0 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="image\logo-designer-working-computer-desktop.jpg.jpeg" class="card-img-top"
+                                alt="Programmer">
+                            <div class="badge-group">
+                                <span class="badge custom-badge badge-purple">Mid Level</span>
+                                <span class="badge custom-badge badge-white">Full Time</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Graphic Designer</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="company-logo bg-light p-1 rounded-circle me-2">
+                                    <img src="image\envato.png" width="40" alt="Envato">
+                                </div>
+                                <span class="text-muted small">Envato</span>
+                                <div class="ms-auto text-muted icon-group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-bookmark me-2 icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-heart icon-hover" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex text-muted small mb-4">
+                                <span class="me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                    Melbournr,Austraila</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                    </svg>
+                                    2 days ago
+                                </span>
+                            </div>
+                            <hr class="text-light">
+                            <div class="d-flex justify-content-between align-items-center pt-2">
+                                <span class="salary-text fw-bold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                        <path
+                                            d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                                    </svg>
+                                    $20k
+                                </span>
+                                <a href="#" class="btn btn-apply px-4 py-2">Apply now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end mt-5">
+                <button class="btn btn-orange btn-lg px-5 py-3 rounded-3 shadow">Browse Job Listings</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section 7 -->
+    <section class="testimonial-section">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Happy customers</h2>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5">
+                    <div class="testimonial-card shadow-sm text-start">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center mb-lg-0">
+                                <img src="image\blond-man-happy-expression.jpg.jpeg" class="user-avatar me-3"
+                                    alt="Jackson">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Jackson</h6>
+                                    <p class="mb-0 text-muted small">Dev Ops</p>
+                                    <div class="star-rating d-flex ">
+                                        <span class="fas fa-star orange-star"></span>
+                                        <span class="fas fa-star orange-star"></span>
+                                        <span class="fas fa-star orange-star"></span>
+                                        <span class="far fa-star empty-star"></span>
+                                        <span class="far fa-star empty-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="testimonial-body">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text">Lorem ipsum dolor sit amet, <br>
+                                consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="testimonial-card shadow-sm text-start">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="image\university-study-abroad-lifestyle-concept.jpg.jpeg"
+                                    class="user-avatar me-3" alt="Kevin">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Kevin</h6>
+                                    <p class="mb-0 text-muted small">Internship</p>
+                                    <div class="star-rating d-flex ">
+                                        <span class="fas fa-star orange-star"></span>
+                                        <span class="fas fa-star orange-star"></span>
+                                        <span class="fas fa-star orange-star"></span>
+                                        <span class="far fa-star empty-star"></span>
+                                        <span class="far fa-star empty-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="testimonial-body">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text">Lorem ipsum dolor sit amet, <br>
+                                consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Sponsors Section -->
+
+    <section class="hero-description text-white d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="fw-bold display-4">Over 10k opening jobs</h1>
+                    <p class="lead">If you are looking for free HTML templates, you may visit Tooplate website. If you
+                        need a collection of free templates, you can visit Too CSS website.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 me-2">Create an account</a>
+                    <a href="#" class="text-white text-decoration-none ms-3">Post a job</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo mb-4">
+                        <img src="image\logo.png" alt="Logo" class="me-2">
+                        <span class="brand-name">Gotto<br>
+                            <p class="brand-tagline">ONLINE JOB PORTAL</p>
+                        </span>
+                    </div>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="fa-solid fa-globe"></i> www.jobbportal.com</li>
+                        <li><i class="fa-solid fa-phone"></i> 305-240-9671</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@jobportal.co</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Guide</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Salary Tool</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-md-12">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <div class="newsletter-card">
+                        <p class="newsletter-text">Get notified jobs news</p>
+                        <div class="input-group-custom">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="email" placeholder="yourname@gmail.com">
+                            <button class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center text-md-start">
+                        <p class="mb-0">Copyright © Gotto Job 2048 <a href="#">Privacy Policy</a> <a href="#">Terms</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center my-3 my-md-0">
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <p class="mb-0">Design: <strong>Template</strong></p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

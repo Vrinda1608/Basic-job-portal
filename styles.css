@@ -1,0 +1,768 @@
+/* navbar */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    position: static;
+    top: 0;
+}
+.custom-round-btn {
+    background-color: hsl(19, 97%, 49%); 
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.custom-round-btn:hover {
+    background-color: hsl(28, 99%, 51%); 
+}
+.register-link {
+    color: hsl(280, 74%, 65%) !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.register-link:hover {
+    color: hwb(0 4% 96%) !important;
+}
+
+/* --------------------------------------------------------*/
+/* Section-2 */
+.hero-section {
+    background: linear-gradient(rgba(122, 106, 216, 0.9), rgba(122, 106, 216, 0.9)), 
+                url('image/close-up-young-business-team-working.jpg.jpeg') center/cover;
+    min-height: 100vh;
+}
+.search-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+}
+.form-control {
+            border-radius: 50px;
+            padding: 12px 20px;
+            border: none;
+}
+.btn-find {
+            background-color: #5849bc;
+            color: white;
+            border-radius: 50px;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            font-weight: 600;
+}
+.btn-find:hover {
+            background-color: #43369d;
+            color: white;
+}
+.keyword-badge {
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 50px;
+            padding: 4px 15px;
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: white;
+            margin-right: 5px;
+            display: inline-block;
+}
+.keyword-badge:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+}
+
+/* --------------------------------------------------------*/
+/* Custom Card Container */
+.custom-card-container {
+    border-radius: 40px;
+    overflow: hidden; 
+}
+.intro-content-box {
+    background-color: var(--gotto-blue);
+    color: white;
+}
+.intro-content-box h1 {
+    font-size: 2.5rem;
+}
+.intro-content-box p {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+/* --------------------------------------------------------*/
+/* Browse by Categories */
+.circle-icon {
+    width: 120px;
+    height: 120px;
+    background-color: var(--gotto-purple);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    margin: 0 auto;
+    border: 4px solid rgba(255,255,255,0.2);
+}
+:root {
+    --gotto-blue: #48cae4;
+    --gotto-purple: #6f42c1;
+    --gotto-orange: #f35525;
+    --gotto-cyan: #0dcaf0;
+    --bg-beige: #f1ede1;
+}
+.category-item {
+    position: relative;
+    display: inline-block;
+}
+.count-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--gotto-cyan);
+    color: white;
+    font-size: 0.75rem;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.julia-tag {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 180px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tag-top {
+    background-color: var(--gotto-blue);
+    color: white;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.tag-bottom {
+    background-color: var(--gotto-purple);
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+}
+/* --------------------------------------------------------*/
+:root {
+    --brand-orange: #ff5722;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.instagram-card-container {
+    max-width: 350px;
+    width: 100%;
+}
+
+.card-image-wrapper {
+    overflow: hidden;
+    border-radius: 10px 60px 60px 10px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.main-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.instagram-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-orange {
+    background-color: var(--brand-orange);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #e64a19;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-orange i {
+    font-size: 1.2rem;}
+
+.job-card {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+.job-card.active, .job-card:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+    z-index: 10;
+}
+.company-logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.company-logo img {
+    max-width: 100%;
+    height: auto;
+}
+.job-meta i {
+    color: #6f42c1; 
+}
+.badge-purple {
+    background-color: #5e4bb6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.badge-outline {
+    background-color: #f8f9ff;
+    color: #aeb4d4;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+.btn-orange {
+    background-color: #f15a24;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: #d4491a;
+    color: white;
+}
+
+
+/* --------------------------------------------------------*/
+/* got helps */
+:root {
+    --brand-purple: #5a52be;
+    --brand-orange: #ff5722;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.play-icon {
+    background-color: var(--brand-orange);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.play-icon:hover {
+    transform: scale(1.1);
+}
+.job-feature-section {
+    padding: 60px 0;
+}
+
+.job-feature-section .bg-purple {
+    background-color: var(--brand-purple);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 25px;
+}
+
+.job-feature-section .bg-purple h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.job-feature-section .bg-purple p {
+    opacity: 0.75;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.job-feature-section .video-container {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.job-feature-section .video-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.job-feature-section .stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.job-feature-section .stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* --------------------------------------------------------*/
+/* Card Container Customization */
+.job-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-container {
+    position: relative;
+    height: 200px;
+}
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-group {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.custom-badge {
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.badge-purple {
+    background-color: #5d46c5;
+    color: white;
+}
+
+.badge-white {
+    background-color: white;
+    color: #5d46c5;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #2c2e33;
+}
+
+.salary-text {
+    color: #5d46c5;
+}
+
+.company-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.company-logo img {
+    max-width: 60px;
+    height: auto;
+}
+.btn-apply {
+    background-color: #f15e22; 
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.btn-apply:hover {
+    background-color: #d84b15;
+    color: white;
+}
+
+.bi-bookmark, .bi-heart {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+hr {
+    opacity: 0.1;
+}
+
+.icon-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.icon-hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.icon-hover:hover {
+    color: #050505 !important;
+    transform: scale(1.2);
+}
+
+/* --------------------------------------------------------*/
+
+:root {
+    --bg-light: #2379dc;
+    --orange-primary: #ff5a2c;
+    --text-dark: #1a1a1a;
+}
+
+.testimonial-section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 55px;
+    height: 80%;
+    width: 90%;
+    position: relative;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f5f5f5;
+}
+
+.text-orange {
+    color: var(--orange-primary);
+}
+
+.testimonial-body {
+    position: relative;
+    padding-top: 10px;
+}
+
+.quote-icon {
+    font-size: 2.5rem;
+    color: #f1f1f1; 
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    z-index: 0;
+}
+
+.testimonial-text {
+    position: relative;
+    z-index: 1;
+    color: #4a4a4a;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: transparent;
+    border: 3px solid var(--orange-primary);
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -1px; 
+}
+/* Star Rating */
+.star-rating {
+    gap: 5px;
+    margin-top: 8px;
+    justify-content: right;
+    align-items: right;
+    display: flex;
+}
+
+.star-rating span {
+    font-size: 18px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.orange-star {
+    color: #ff9800 !important;
+}
+
+.empty-star {
+    color: #d0d0d0;
+}
+
+.star-rating span:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 2px 4px rgba(255, 152, 0, 0.4));
+}
+
+/* --------------------------------------------------------*/
+.hero-description {
+    min-height: 400px;
+    background-image: url(image/millennial-group-young-businesspeople.jpg.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset   0 0 0 1000px lab(49.36% 48.85 57.47 / 0.801); 
+}
+.hero-description .overlay {
+    background: rgba(0, 0, 0, 0.5); 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    border-radius: 15px;
+}
+.hero-description h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.btn-outline-light:hover {
+    background-color: white;
+    color: #ef6b44; 
+}
+
+.btn-outline-light {
+    border-color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* --------------------------------------------------------*/
+/* Footer Styles */
+.footer-section {
+    padding-top: 80px;
+    background-color: #fff;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 40px;
+    height: auto;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(220, 86%, 57%);
+}
+
+.brand-tagline {
+    font-size: 10px;
+    color: #ff5e14;
+    font-weight: bold;
+    margin-top: -5px;
+    letter-spacing: 1px;
+}
+
+.contact-info li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.contact-info i {
+    width: 25px;
+    color: #4c4cc7;
+}
+
+.footer-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #777;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #4c4cc7;
+}
+
+.newsletter-card {
+    background-color: #f0f7ff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.newsletter-text {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group-custom {
+    background: #fff;
+    border-radius: 50px;
+    padding: 8px 10px 8px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.input-group-custom input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.input-group-custom i {
+    color: #aaa;
+}
+
+.btn-send {
+    background-color: #5c59d1;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background-color: #4340b3;
+}
+
+
+.footer-bottom {
+    background-color: #5c59d1;
+    padding: 20px 0;
+    color: white;
+    position: relative;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.social-links a {
+    background: rgba(255,255,255,0.2);
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+.back-to-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    background-color: #3bc8e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #2aafcc;
+}
+
