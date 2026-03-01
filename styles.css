@@ -31,7 +31,7 @@ body {
 /* Section-2 */
 .hero-section {
     background: linear-gradient(rgba(122, 106, 216, 0.9), rgba(122, 106, 216, 0.9)), 
-                url('image/close-up-young-business-team-working.jpg.jpeg') center/cover;
+                url('image/close-up-young-business-team-working.jpeg') center/cover;
     min-height: 100vh;
 }
 .search-card {
@@ -567,7 +567,7 @@ hr {
 /* --------------------------------------------------------*/
 .hero-description {
     min-height: 400px;
-    background-image: url(image/millennial-group-young-businesspeople.jpg.jpeg);
+    background-image: url(image/millennial-group-young-businesspeople.jpeg);
     background-size: cover;
     background-position: center;
     box-shadow: inset   0 0 0 1000px lab(49.36% 48.85 57.47 / 0.801); 
@@ -765,4 +765,3 @@ hr {
 .back-to-top:hover {
     background-color: #2aafcc;
 }
-
